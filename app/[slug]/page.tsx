@@ -18,7 +18,7 @@ export default async function SeoPage({ params }: { params: Promise<{ slug: stri
   const page = seoPages.find((item) => item.slug === slug);
   if (!page) notFound();
   return <main>
-    <nav className="nav-wrap"><Link className="brand" href="/">PDFLUV<span>.COM</span></Link><div className="nav-links"><span className="top-trust">✓ No account required</span><Link href="/compress-pdf">Compress PDF</Link><Link href="/benchmarks">Benchmarks</Link></div><Link className="nav-quiet" href="/">Back home <span>↗</span></Link></nav>
+    <nav className="nav-wrap"><div className="nav-top"><Link className="brand" href="/">PDFLUV<span>.COM</span></Link><span className="top-trust">✓ No account required</span></div><div className="nav-links"><Link href="/compress-pdf">Compress PDF</Link><Link href="/benchmarks">Benchmarks</Link></div></nav>
     <section className="seo-hero"><div><p className="eyebrow">{page.eyebrow}</p><h1>{page.headline}<br /><em>{page.accent}</em></h1><p className="hero-lede">{page.description}</p></div>{page.kind === "tool" && <Compressor />}</section>
     <article className="seo-content">{page.sections.map((section) => <section key={section.heading}><h2>{section.heading}</h2>{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{section.bullets && <ul>{section.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul>}</section>)}
   <section><h2>Frequently asked questions</h2>{page.faqs.map((faq) => <div className="faq" key={faq.question}><h3>{faq.question}</h3><p>{faq.answer}</p></div>)}</section>
