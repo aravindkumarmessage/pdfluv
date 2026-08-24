@@ -9,7 +9,7 @@ const features = [
 
 export default function Home() {
   return <main>
-    <nav className="nav-wrap"><Link className="brand" href="/">pdf<span>luv</span><b>.</b></Link><div className="nav-links"><Link href="/compression-technology">How it works</Link><Link href="/benchmarks">Benchmarks</Link></div><Link className="nav-quiet" href="/pricing">For teams <span>↗</span></Link></nav>
+    <nav className="nav-wrap"><Link className="brand" href="/">PDFLUV<span>.COM</span></Link><div className="nav-links"><span className="top-trust">✓ No account required</span><Link href="/compression-technology">How it works</Link><Link href="/benchmarks">Benchmarks</Link></div><Link className="nav-quiet" href="/pricing">For teams <span>↗</span></Link></nav>
     <section className="hero section-grid"><div className="hero-copy"><p className="eyebrow"><span className="pulse" /> Smart PDF compression</p><h1>Make space.<br /><em>Keep the good stuff.</em></h1><p className="hero-lede">PDFluv looks inside your document, then finds the lightest path that still feels like the original.</p><div className="hero-note"><span>✦</span> Built for the details people notice</div></div><Compressor /></section>
     <section className="proof-strip"><p>Designed for real documents</p><span>Scans</span><span>Reports</span><span>Slides</span><span>Forms</span><span>Portfolios</span></section>
     <section className="explain section-grid"><div><p className="eyebrow">A little more considered</p><h2>Compression that<br /><em>knows the difference.</em></h2></div><div className="feature-list">{features.map(([number, title, text]) => <article key={number}><span className="feature-num">{number}</span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div></section>

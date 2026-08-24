@@ -30,7 +30,8 @@ button, input, select { font: inherit; }
 .nav-wrap, .hero, .explain, footer { width: min(1160px, calc(100% - 48px)); margin-inline: auto; }
 .nav-wrap { height: 88px; display: flex; align-items: center; justify-content: space-between; border-bottom: 0; }
 .brand { color: var(--ink); font: 700 24px var(--font-space-grotesk), sans-serif; letter-spacing: -1px; text-decoration: none; }
-.brand span { color: var(--teal); }.brand b { color: var(--coral); }
+.brand span { color: var(--coral); }.brand b { color: var(--coral); }
+.top-trust { color: var(--muted); font-size: 12px; }
 .nav-links { display: flex; gap: 34px; margin-left: 120px; }.nav-links a, .nav-quiet, footer a { color: var(--muted); font-size: 13px; text-decoration: none; }.nav-links a:hover, footer a:hover { color: var(--ink); }.nav-quiet { color: var(--ink); }.nav-quiet span { color: var(--coral); margin-left: 8px; }
 .section-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 76px; }
 .hero { min-height: 635px; align-items: center; padding: 82px 0 108px; }
