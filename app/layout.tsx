@@ -13,7 +13,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.VERCEL_ENV === "production" ? "https://pdfluv.vercel.app" : (process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000")),
+  metadataBase: new URL("https://pdfluv.vercel.app"),
   title: { default: "Compress PDF Online | PDFluv", template: "%s | PDFluv" },
   description: "Reduce PDF size online with smart, content-aware compression that protects the details that matter.",
   applicationName: "PDFluv",
