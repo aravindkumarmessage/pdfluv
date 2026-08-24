@@ -1,0 +1,7 @@
+services:
+  api:
+    build: ./engine
+    ports:
+      - "8000:8000"
+    environment:
+      - MAX_UPLOAD_MB=50
